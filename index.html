@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+        <head>
+            <title> Vinnie Lollino</title>
+                <html lang="en">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=d=evice-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="The best thing about hello world is the greeting">
+                <meta name="keywords" content="">
+                <link href="./dist/css/main.css" type="text/css" rel="stylesheet">
+        </head>
 
-<html>
-    <head>
-        <title>Hello, I am Vinnie Lollino</title>
-        <body>
-            <img src="https://en.gravatar.com/userimage/39663719/7ba6db42b9d9d3b4da8f9be8a1552f73.png" alt="Chicago Blackhawks Logo">
-            
-            <h1>Hello, I am Vinnie Lollino</h1>
-                <p>I am taking this course so that I can move into the tech space.  I like fishing, The Grateful Dead, and <b><i>LOVE</i></b> hockey.</p>
-        </body>
-    </head>
-
+    <header>
+        <span class="logo">My WebSite</span>
+        <a id="toggleMenu">Menu<a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-</html>
+    </header>
+     
+        <main>
+            <h1>Hello, I am Vinnie Lollino</h1>
+                <p>I am taking this course so that I can move into the tech space.  I like fishing, The Grateful Dead, and <b><i>LOVE</i></b> hockey.</p>
+                <img src="https://en.gravatar.com/userimage/39663719/7ba6db42b9d9d3b4da8f9be8a1552f73.png" alt="Chicago Blackhawks Logo">
+
+        </main>
+
+        <script>
+
+                var toggleMenu = document.getElementById('toggleMenu');
+                var nav = document.querySelector('nav');
+                toggleMenu.addEventListener(
+                    'click',
+                    function(){
+                    if(nav.style.display=='block'){
+                        nav.style.display='none';
+                    }else{
+                        nav.style.display='block';
+                    }
+                    }
+                );
+                </script>
+
+            </body>
+   </html>
+
+
+
+
 
 
 
