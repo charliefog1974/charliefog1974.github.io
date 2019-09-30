@@ -1,21 +1,28 @@
 /* mixins */
 /* clear floats */
 @mixin clearfix() {
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
+}
 
 /* variables */
-
 $primary-font-stack: "Helvetica Neue",Helvetica,Arial,sans-serif;
 $primary-color: #333;
 
-$success-color: #3c763d;
-$warning-color: #8a6d3b;
-$error-color: #a94442;
+/* universal settings */
+* {
+ box-sizing: border-box;
+}
+body {
+ font: 100% $primary-font-stack;
+ color: $primary-color;
+ margin: 0 auto;
+ padding: 0;
+ width: 1170px;
+}
 
 /* Utility Classes */
 
@@ -38,26 +45,10 @@ $error-color: #a94442;
   background: #fff;
 }
 
-/* universal settings */
-
-* {
-  box-sizing: border-box;
+.text-success {
+  color: $success-color;
 }
 
-body {
-  font: 100% $primary-font-stack;
-  color: $primary-color;
-
-  margin: 0 auto;
-  padding: 0;
-  width: 1170px;
-
-} 
-
-.text-success {
-    color: $success-color;
-  }
-  
 .text-error {
   color: $error-color;
 }
@@ -90,4 +81,3 @@ body {
   border-color: $warning-color;
   color: $warning-color;
 }
-
