@@ -9,12 +9,13 @@
         margin: 0;
       }
     
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+      @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
     
     * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     }
-    
+
+  
     header {
         height: 50px;
         background:rgb(106, 3, 138);
@@ -105,4 +106,9 @@
     }
     
     }
+
+.element {
+  font-size: 80px
+
+}
 
