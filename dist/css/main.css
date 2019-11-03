@@ -7,7 +7,14 @@
     .resume-name{
       font-size: 50px;
       text-align: center;
-      }
+      text-shadow: 4px 4px rgb(106, 3, 138);
+    }
+
+    .resume-name-familiar{
+      font-size: 25px;
+      text-align: center;
+      text-shadow: 1px 1px rgb(106, 3, 138);
+    }
 
     body{
         background-color: rgba(236, 228, 228, 0.788);
