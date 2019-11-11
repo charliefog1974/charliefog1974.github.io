@@ -20,6 +20,10 @@ header {
   background: rgb(106, 3, 138);
   color: #fff;
   padding: 0 0.5rem 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  opacity: 1;
 }
 
 header .logo {
@@ -57,7 +61,7 @@ nav ul li a:hover {
 
 main {
   /* Use a margin to center the page */
-  margin: 0 auto;
+  margin: 30 px;
 
   /* Set the width of the content */
   width: 960px;
@@ -128,7 +132,9 @@ $error-color: #a94442;
 body {
   font: 100% $primary-font-stack;
   color: $primary-color;
-  margin: 0 auto;
+  margin-top: 100px; 
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   width: 1170px;
 }
