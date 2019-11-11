@@ -32,6 +32,21 @@ header .logo {
   font-weight: bold;
 }
 
+.personal-link:link {
+  text-decoration: none;
+  color: rgb(4, 0, 130);
+
+}
+
+.personal-link:hover {
+  background-color: rgb(194, 184, 184); 
+}
+
+.personal-link:visited {
+  text-decoration: none;
+  color:rgb(166, 23, 209);
+}
+
 nav {
   float: right;
 }
