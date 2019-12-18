@@ -83,12 +83,12 @@ main {
   width: 960px;
 
   /* For smaller screens to not exceed the max screen width */
-  max-width: 100%;
+  max-width: 90%;
 }
 
 @media only screen and (max-width: 960px) {
   main {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
@@ -145,6 +145,12 @@ $error-color: #a94442;
 * {
   box-sizing: border-box;
 }
+
+.home-page-title {
+  font: $primary-font-stack;
+  color: $primary-color;
+}
+
 body {
   font: 100% $primary-font-stack;
   color: $primary-color;
@@ -219,14 +225,14 @@ element {
 
 .resume-name {
   font-size: 50px;
+  color: 5px 5px rgb(106, 3, 138);
   text-align: center;
-  text-shadow: 5px 5px rgb(106, 3, 138);
 }
 
 .resume-name-familiar {
   font-size: 25px;
   text-align: center;
-  text-shadow: 1px 1px rgb(106, 3, 138);
+  
 }
 
 .caradvise, .epsilon, .subaru, .harley, .chamberlain, .trivantage {
@@ -246,3 +252,27 @@ element {
   z-index: -1;
 }
 
+canvas {
+  background: rgb(0, 0, 0);
+}
+
+/* 4. Over lay the score on the top left corner of the canvas.*/
+#score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(38, 187, 8);
+}
+
+.game-title {
+  position: absolute;
+  float: left;
+  color: rgb(10, 177, 113);
+}
+
+.sources {
+  display: none;
+}
