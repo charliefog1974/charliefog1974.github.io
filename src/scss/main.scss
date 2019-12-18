@@ -252,26 +252,14 @@ element {
   z-index: -1;
 }
 
-canvas {
-  background: rgb(0, 0, 0);
-}
+// canvas {
+//   background: rgb(0, 0, 0);
+// }
 
 /* 4. Over lay the score on the top left corner of the canvas.*/
-#score {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
-  font-weight: bold;
-  font-size: 20px;
-  color: rgb(38, 187, 8);
-}
+// S
 
-.game-title {
-  position: absolute;
-  float: left;
-  color: rgb(10, 177, 113);
-}
+// S
 
 .sources {
   display: none;
