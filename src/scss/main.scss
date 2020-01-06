@@ -225,14 +225,16 @@ element {
 
 .resume-name {
   font-size: 50px;
-  color: 5px 5px rgb(106, 3, 138);
+  color: #000;
   text-align: center;
-  text-shadow: 2px 2px lime;
+  text-shadow: 2px 2px 5px rgb(151, 145, 145);
 }
 
 .resume-name-familiar {
   font-size: 25px;
   text-align: center;
+  color: #000;
+  text-shadow: 2px 2px 5px rgb(151, 145, 145);
   
 }
 
