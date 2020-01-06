@@ -1,30 +1,50 @@
 .avatar {
-  border-radius: 50%; 
-  float: right; 
+  border-radius: 50%;
+  float: right;
   margin-right: 1em;
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 * {
-font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
   height: 50px;
-  background:rgb(106, 3, 138);
+  background: rgb(106, 3, 138);
   color: #fff;
-  padding: 0 .5rem 0 1rem;
+  padding: 0 0.5rem 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  opacity: 1;
+  z-index: 1;
 }
 
-header .logo{
+header .logo {
   line-height: 50px;
   font-weight: bold;
+}
+
+.personal-link:link {
+  text-decoration: none;
+  color: rgb(4, 0, 130);
+
+}
+
+.personal-link:hover {
+  background-color: rgb(194, 184, 184); 
+}
+
+.personal-link:visited {
+  text-decoration: none;
+  color:rgb(166, 23, 209);
 }
 
 nav {
@@ -37,38 +57,38 @@ nav ul {
   list-style: none;
 }
 
-nav ul li{
+nav ul li {
   display: inline;
 }
 
 nav ul li a,
 nav ul li a:link,
-nav ul li a:visited{
+nav ul li a:visited {
   display: inline-block;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   color: #fff;
   line-height: 50px;
   text-decoration: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   background: #444;
 }
 
 main {
   /* Use a margin to center the page */
-  margin: 0 auto;
+  margin: 30 px;
 
   /* Set the width of the content */
   width: 960px;
 
   /* For smaller screens to not exceed the max screen width */
-  max-width: 100%;
+  max-width: 90%;
 }
 
-@media only screen and (max-width: 960px)  {
+@media only screen and (max-width: 960px) {
   main {
-      max-width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -76,34 +96,32 @@ main {
   display: none;
 }
 
-@media only screen and (max-width: 960px)  {
+@media only screen and (max-width: 960px) {
+  #toggleMenu {
+    display: block;
+    float: right;
+    line-height: 50px;
+  }
 
-#toggleMenu {
-  display: block;
-  float: right;
-  line-height: 50px;
-}
+  header {
+    position: relative;
+  }
 
-header {
-  position: relative;
-}
+  nav {
+    position: absolute;
+    display: none;
+    background: rgb(106, 3, 138);
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
 
-nav {
-  position: absolute;
-  display: none;
-  background: rgb(106, 3, 138);
-  top: 50px;
-  left: 0;
-  right: 0;
-}
-
-nav ul li a,
-nav ul li a:link,
-nav ul li a:visited{
-  display: block;
-  border-bottom: 1px solid #777;
-}
-
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited {
+    display: block;
+    border-bottom: 1px solid #777;
+  }
 }
 
 /* mixins */
@@ -117,7 +135,7 @@ nav ul li a:visited{
 }
 
 /* variables */
-$primary-font-stack: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$primary-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #333;
 $success-color: #3c763d;
 $warning-color: #8a6d3b;
@@ -125,14 +143,22 @@ $error-color: #a94442;
 
 /* universal settings */
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+.home-page-title {
+  font: $primary-font-stack;
+  color: $primary-color;
+}
+
 body {
- font: 100% $primary-font-stack;
- color: $primary-color;
- margin: 0 auto;
- padding: 0;
- width: 1170px;
+  font: 100% $primary-font-stack;
+  color: $primary-color;
+  margin-top: 100px; 
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 0;
+  width: 1170px;
 }
 
 /* Utility Classes */
@@ -149,7 +175,7 @@ body {
 .col {
   float: left;
   width: 25%;
-  padding: .5rem;
+  padding: 0.5rem;
 
   /* debug */
   border: 1px solid #990000;
@@ -176,9 +202,9 @@ body {
 }
 
 .message-success {
-    @extend .message;
-    border-color: $success-color;
-    color: $success-color;
+  @extend .message;
+  border-color: $success-color;
+  color: $success-color;
 }
 
 .message-error {
@@ -195,22 +221,37 @@ body {
 
 element {
   font-size: 40 px;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> origin
 }
 
 .resume-name {
   font-size: 50px;
+<<<<<<< HEAD
   color:rgb(0,0,0);
   text-align: center;
   text-shadow: 2px 2px 5px rgb(121, 118, 118);
+=======
+  color: #000;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(151, 145, 145);
+>>>>>>> origin
 }
 
 .resume-name-familiar {
   font-size: 25px;
+<<<<<<< HEAD
   color:rgb(0,0,0);
   text-align: center;
   text-shadow: 2px 2px 5px rgb(121, 118, 118);
+=======
+  text-align: center;
+  color: #000;
+  text-shadow: 2px 2px 5px rgb(151, 145, 145);
+>>>>>>> origin
   
 }
 
@@ -242,5 +283,8 @@ element {
 
 .sources {
   display: none;
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> origin
 }
