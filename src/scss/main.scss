@@ -77,13 +77,13 @@ nav ul li a:hover {
 
 main {
   /* Use a margin to center the page */
-  margin: 30 px;
+  margin: 0 auto;
 
   /* Set the width of the content */
   width: 960px;
 
   /* For smaller screens to not exceed the max screen width */
-  max-width: 90%;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 960px) {
