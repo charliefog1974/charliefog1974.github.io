@@ -83,25 +83,27 @@ main {
   width: 960px;
 
   /* For smaller screens to not exceed the max screen width */
-  max-width: 100%;
+  max-width: 90%;
 }
+
+/* gutter to small screens*/
 
 @media only screen and (max-width: 960px) {
   main {
     max-width: 90%;
   }
-}
+
 
 #toggleMenu {
   display: none;
 }
 
-@media only screen and (max-width: 960px) {
-  #toggleMenu {
-    display: block;
-    float: right;
-    line-height: 50px;
-  }
+// @media only screen and (max-width: 960px) {
+//   #toggleMenu {
+//     display: block;
+//     float: right;
+//     line-height: 50px;
+//   }
 
   header {
     position: relative;
